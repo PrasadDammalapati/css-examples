@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        #mymenu {
+            background-color:grey;
+            height:20px;
+            width:960px;
+        }
+            #mymenu ul {
+                padding:0;
+                margin:0;
+                list-style:none;
+            }
+            #mymenu li {
+                display:block;
+                float:left;
+                position:relative;
+                width:80px;
+            }
+                #mymenu li a:hover {
+                    background-color:#fff;
+                    color:#000;
+                }
+                #mymenu li a {
+                    text-decoration:none;
+                    padding-right: 7px;
+                }
+                #mymenu li ul {
+                    display:none;
+                    position:absolute;
+                }
+                #mymenu li:hover ul {
+                    display:block;
+                    background-color:#4c9caa;
+                    color:black;
+                }
+                #mymenu li ul a:hover {
+                    background-color:white;
+                }
+    </style>
+</head>
+<body>
+        <center>
+        <div id="mymenu">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li><a href="#">Menu 1</a>
+                    <ul>
+                        <li>
+                            <a href="#">sub menu1</a>
+                            <a href="#">sub menu2</a>
+                            <a href="#">sub menu3</a>
+                            <a href="#">sub menu4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Menu 2</a>
+                    <ul>
+                        <li>
+                            <a href="#">sub menu1</a>
+                            <a href="#">sub menu2</a>
+                            <a href="#">sub menu3</a>
+                            <a href="#">sub menu4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </div>
+            </center>
+</body>
+</html>
